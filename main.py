@@ -1,5 +1,6 @@
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
+import os
 #from constants import *
 # Сюда нужно вставить токен, который выдал BotFather
 TOKEN = os.getenv('BOT_TOKEN')
