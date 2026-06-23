@@ -7,9 +7,9 @@ TOKEN = os.getenv('BOT_TOKEN')
 bot = telebot.TeleBot(TOKEN)
 URL1 = os.getenv('URL1')
 URL2 = os.getenv('URL2')
-URL3 = os.getenv('URL3')
-URL4 = os.getenv('URL4')
-URL5 = os.getenv('URL5')
+#URL3 = os.getenv('URL3')
+#URL4 = os.getenv('URL4')
+#URL5 = os.getenv('URL5')
 @bot.message_handler(commands=['start'])
 def start_command(message):
     # Создаем клавиатуру
@@ -18,9 +18,9 @@ def start_command(message):
     # Создаем 5 кнопок. Замените названия и ссылки на свои
     btn1 = InlineKeyboardButton(text="Tribute", url=URL1)
     btn2 = InlineKeyboardButton(text="Stars", url=URL2)
-    btn3 = InlineKeyboardButton(text="CryptoClaude", url=URL3)
-    btn4 = InlineKeyboardButton(text="Crypto bot", url=URL4)
-    btn5 = InlineKeyboardButton(text="TributeWeb", url=URL5)
+    #btn3 = InlineKeyboardButton(text="CryptoClaude", url=URL3)
+    #btn4 = InlineKeyboardButton(text="Crypto bot", url=URL4)
+    #btn5 = InlineKeyboardButton(text="TributeWeb", url=URL5)
     
     # Добавляем кнопки в клавиатуру
     # В данном случае каждая кнопка будет на новой строке. 
