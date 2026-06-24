@@ -29,9 +29,4 @@ def start_command(message):
 if __name__ == '__main__':
     print("Бот запущен...")
     bot.polling(none_stop=True)
-#URL3 = os.getenv('URL3')
-#URL4 = os.getenv('URL4')
-#URL5 = os.getenv('URL5')
-    #btn4 = InlineKeyboardButton(text="Crypto bot", url=URL4)
-    #btn5 = InlineKeyboardButton(text="TributeWeb", url=URL5)
 
