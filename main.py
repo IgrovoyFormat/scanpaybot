@@ -14,15 +14,16 @@ def start_command(message):
     markup = InlineKeyboardMarkup()
     
     btn1 = InlineKeyboardButton(text="Tribute", url=URL1)
-    btn2 = InlineKeyboardButton(text="Stars", url=URL2)
+    btn2 = InlineKeyboardButton(text="Crypto bot", url=URL2)
     btn3 = InlineKeyboardButton(text="Support", url=URL3)
     
     markup.add(btn1)
     markup.add(btn2)
+    markup.add(btn3)
     
     bot.send_message(
         message.chat.id, 
-        "Привет! При оплате с помощью Tribute действует пробный период. Нажми на любую из кнопок ниже, чтобы оплатить с помощью:", 
+        "Hi! 👋 I'm your personal payment assistant.", 
         reply_markup=markup
     )
 
